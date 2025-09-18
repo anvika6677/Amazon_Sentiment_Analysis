@@ -1,11 +1,5 @@
-That's the perfect final step. A professional `README.md` file is essential for your portfolio because it's the first thing recruiters and collaborators see.
 
-Here is a template for a comprehensive `README.md` file that tells the complete story of your project, from the initial version to the final dashboard.
-
-You can copy and paste this into your `README.md` file and fill in the details.
-
------
-![Customer Sentiment Dashboard](C:\Amazon_sentiment_analysis\assets\Screenshot 2025-09-18 180215.png)
+![Customer Sentiment Dashboard](assets/Screenshot 2025-09-18 180215.png)
 
 ## **Project Title: End-to-End Amazon Review Analysis**
 
