@@ -5,6 +5,7 @@ Here is a template for a comprehensive `README.md` file that tells the complete 
 You can copy and paste this into your `README.md` file and fill in the details.
 
 -----
+![Customer Sentiment Dashboard](C:\Amazon_sentiment_analysis\assets\Screenshot 2025-09-18 180215.png)
 
 ## **Project Title: End-to-End Amazon Review Analysis**
 
