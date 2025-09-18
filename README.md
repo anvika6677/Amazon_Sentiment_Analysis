@@ -1,4 +1,4 @@
-
+[![Binder]([![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anvika6677/Amazon_Sentiment_Analysis/master))
 ![Customer Sentiment Dashboard](https://github.com/anvika6677/Amazon_Sentiment_Analysis/blob/master/assets/Screenshot%202025-09-18%20180215.png?raw=true)
 
 ## **Project Title: End-to-End Amazon Review Analysis**
