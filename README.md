@@ -1,5 +1,5 @@
 
-![Customer Sentiment Dashboard](assets/Screenshot 2025-09-18 180215.png)
+![Customer Sentiment Dashboard](https://github.com/anvika6677/Amazon_Sentiment_Analysis/blob/master/assets/Screenshot%202025-09-18%20180215.png?raw=true)
 
 ## **Project Title: End-to-End Amazon Review Analysis**
 
