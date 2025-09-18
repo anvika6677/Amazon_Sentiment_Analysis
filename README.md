@@ -1,88 +1,62 @@
+That's the perfect final step. A professional `README.md` file is essential for your portfolio because it's the first thing recruiters and collaborators see.
 
-# Amazon Sentiment Analysis
+Here is a template for a comprehensive `README.md` file that tells the complete story of your project, from the initial version to the final dashboard.
 
-## Project Overview
-This project analyzes customer reviews from Amazon to determine their sentiment as positive, negative, or neutral. The goal is to understand customer feedback better by utilizing Natural Language Processing (NLP) techniques, text preprocessing, and sentiment analysis tools such as `VADER` and `TextBlob`. Visualizations and insights are provided to explore the distribution of sentiments.
+You can copy and paste this into your `README.md` file and fill in the details.
 
-## Technologies Used
-- **Python**
-- **Pandas**
-- **Numpy**
-- **NLTK** (VADER Sentiment Analyzer)
-- **TextBlob**
-- **Plotly** (for data visualization)
-- **Matplotlib**
-- **Seaborn**
-- **WordCloud**
+-----
 
-## Dataset
-The dataset used for this analysis consists of Amazon customer reviews. It includes several features such as `reviewText`, which is the primary focus for sentiment analysis. The dataset was cleaned and processed to ensure accurate results.
+## **Project Title: End-to-End Amazon Review Analysis**
 
-## Project Steps
-### 1. Data Cleaning
-- Removed missing or null values.
-- Sorted data by `wilson_lower_bound` for reliability.
-- Cleaned the `reviewText` column by removing numbers, punctuations, and converting text to lowercase for uniformity.
+### **1. Project Overview**
 
-### 2. Sentiment Analysis
-- **VADER** Sentiment Analyzer was used to compute the polarity scores for each review.
-- **TextBlob** was used to extract polarity and subjectivity of the reviews.
-- The dataset was categorized into three sentiment classes: Positive, Negative, and Neutral based on the polarity score.
+This project is an end-to-end data science pipeline for analyzing customer sentiment from a real-world Amazon review dataset. The goal was to build a series of machine learning models to classify and predict customer ratings, and then to visualize the key insights using Tableau.
 
-### 3. Data Visualization
-- Generated bar charts and pie charts to visualize the distribution of sentiments across the reviews.
-- Used **Plotly** to create interactive visualizations for sentiment count and percentage distributions.
-- **WordCloud** was used to display frequent words in the reviews.
+The project demonstrates a full workflow, from initial data exploration and cleaning to building and evaluating machine learning and deep learning models, and finally, communicating the results through professional dashboards.
 
-### 4. Top Positive Reviews
-Identified the top 5 positive reviews based on `wilson_lower_bound`.
+### **2. Project Features & Techniques**
 
-## Key Functions
-- **check_dataframe(df)**: Provides a summary of the data including shape, missing values, duplicated values, and quantiles.
-- **missing_values_analysis(df)**: Analyzes missing values across the dataset.
-- **categorical_variable_summary(df, column_name)**: Visualizes categorical data distribution using both a count plot and a pie chart.
-- **Sentiment Analysis**: Applied VADER sentiment analysis and TextBlob for text analysis.
+This project showcases proficiency in the following areas:
 
-## Sample Code
+  * **Data Exploration & Cleaning**: Handling missing values, sorting, and advanced text preprocessing (stopwords, lemmatization).
+  * **Classification**: Building a sentiment classifier using `scikit-learn` and a deep learning model with `TensorFlow`.
+  * **Regression**: Creating a regression model to predict numerical ratings using `scikit-learn`.
+  * **Deep Learning**: Developing and optimizing a neural network model to combat overfitting using `Dropout` layers.
+  * **Data Visualization**: Creating a professional, interactive dashboard in Tableau to communicate insights.
+  * **Version Control**: Using Git for professional workflow, including committing, branching, and resolving conflicts.
 
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-df[['polarity','subjectivity']] = df['reviewText'].apply(lambda Text: pd.Series(TextBlob(Text).sentiment))
+### **3. Project Methodology (Milestones)**
 
-# Assigning sentiment labels
-for index, row in df['reviewText'].items():
-    score = SentimentIntensityAnalyzer().polarity_scores(row)
-    neg = score['neg']
-    pos = score['pos']
+The project was developed in a series of logical milestones to showcase a full data science workflow:
 
-    if neg > pos:
-        df.loc[index, 'sentiment'] = "Negative"
-    elif pos > neg:
-        df.loc[index, 'sentiment'] = "Positive"
-    else:
-        df.loc[index, 'sentiment'] = "Neutral"
+  * **Version 1 (Initial Analysis)**: Performed initial data exploration and built a rule-based sentiment classifier using `TextBlob` and `VADER`.
+  * **Milestone 1 (Classification)**: Upgraded the sentiment analysis to a supervised machine learning model using `scikit-learn` (`TfidfVectorizer` and `LogisticRegression`). Identified and addressed **class imbalance** as a key challenge.
+  * **Milestone 2 (Regression)**: Pivoted the problem to a regression task, building a model to predict the `Overall Rating` and evaluating its performance with `MAE` and `RMSE`.
+  * **Milestone 3 (Deep Learning)**: Built a feed-forward neural network using `TensorFlow`/`Keras` to perform sentiment classification, addressing **overfitting** with `Dropout` layers.
+  * **Tableau Visualization**: Connected the final cleaned dataset to Tableau to create an interactive dashboard for a business audience.
 
+### **4. Key Results**
 
-## Visualizations
-Sentiment breakdown of reviews:
-- Positive
-- Negative
-- Neutral
+  * **Sentiment Classifier**: The final `scikit-learn` model achieved an accuracy of **92%** on the test set.
+  * **Rating Predictor**: The regression model achieved a Mean Absolute Error (MAE) of **0.39**, meaning the predicted rating was, on average, less than half a point off the actual rating.
+  * **Tableau Dashboard**: The project's key findings are summarized in a dashboard displaying sentiment distribution, top reviewer rating breakdown, and sentiment trends over time.
 
-Sample visualization:
+**
 
-categorical_variable_summary(df, 'sentiment')
+### **5. How to Run the Code**
 
+1.  **Clone the repository**: `git clone [https://github.com/anvika6677/Amazon_Sentiment_Analysis]`
+2.  **Install dependencies**: `pip install -r requirements.txt`
+3.  **Run the notebooks**: Open the `.ipynb` files in VS Code or Jupyter and run the cells in order. The data file (`amazon.csv`) is already included in the repository.
 
-## Results
-The sentiment analysis revealed a dominant positive sentiment among the reviews, followed by neutral and negative sentiments. Key insights and patterns in the data were explored using graphical visualizations.
+### **6. Files in this Repository**
 
-## Installation
-To run this project, you will need to install the following libraries:
+  * **`sentiment_analysis_vX.ipynb`**: Python notebooks for each milestone.
+  * **`amazon.csv`**: The dataset used for the project.
+  * **`requirements.txt`**: A list of all Python libraries required.
+  * **`Customer_Sentiment_dashboard.twb(x)`**: The Tableau workbook.
+  * **`README.md`**: This file.
 
-pip install pandas numpy nltk textblob matplotlib seaborn wordcloud plotly
+### **7. Author**
 
-
-## Conclusion
-This project provides an overview of customer sentiments from Amazon reviews, enabling businesses to gain deeper insights into customer satisfaction. Through sentiment analysis and visualizations, the project demonstrates how NLP techniques can be applied to real-world data.
-
-
+[Maddula Sai Anvika] - [https://www.linkedin.com/in/anvika-maddula-04849a255/]
